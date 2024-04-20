@@ -1,4 +1,4 @@
-let boidNum = 100;
+let boidNum = 150;
 let flockNum = 5;
 let perceptionRadius = 40;
 let alignmentFactor = 0.5;
