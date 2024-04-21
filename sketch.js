@@ -33,6 +33,9 @@ function setup() {
 function draw() {
   background(0);
   noStroke();
+  alignmentFactor = alignSlider.value();
+  cohesionFactor = cohesionSlider.value();
+  seperationFactor = separationSlider.value();
   for (let b = 0; b < boidNum; b++) {
     boids[b].show();
     boids[b].update();
