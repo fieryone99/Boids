@@ -1,5 +1,5 @@
 let boidNum = 100;
-let perceptionRadius = 40;
+let perceptionRadius = 60;
 let alignmentFactor = 0.5;
 let cohesionFactor = 0.25;
 let seperationFactor = 0.3;
