@@ -1,5 +1,4 @@
 let boidNum = 100;
-let flockNum = 5;
 let perceptionRadius = 40;
 let alignmentFactor = 0.5;
 let cohesionFactor = 0.25;
@@ -11,6 +10,7 @@ let boids = [];
 
 let alignSlider, cohesionSlider, separationSlider;
 function setup() {
+  flockNum = floor(random(6));
   alignSlider = createSlider(0, 2, 0.5, 0.1);
   alignSlider.position(0, 0);
   cohesionSlider = createSlider(0, 2, 0.35, 0.1);
