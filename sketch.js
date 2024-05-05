@@ -37,7 +37,7 @@ function draw() {
   }
 }
 
-randomBoids() {
+function randomBoids() {
   boids.length = 0;
   flockNum = floor(random(7));
 for (let i = 0; i < boidNum; i++) {
