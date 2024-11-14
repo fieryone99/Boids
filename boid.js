@@ -11,7 +11,7 @@ class Boid {
 }
   
   show() {
-    let hue = map(this.flockID, 0, flockNum, 0, 360);
+    let hue = (map(this.flockID, 0, flockNum, 0, 360) + randomOffset) % 360;
     fill(hue, 95, 100, 95);
     push();
     let theta = this.velocity.heading() + radians(90);
