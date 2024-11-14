@@ -7,6 +7,7 @@ let maxSpeed = 4;
 let minSpeed = 2;
 let size = 7;
 let boids = [];
+let randomOffset;
 
 let alignSlider, cohesionSlider, separationSlider;
 let regenerateButton;
@@ -38,6 +39,7 @@ function draw() {
 }
 
 function randomBoids() {
+  randomOffset = random(360);
   boids.length = 0;
   flockNum = floor(random(7));
 for (let i = 0; i < boidNum; i++) {
